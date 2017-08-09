@@ -1,6 +1,6 @@
 <?php
 $access_token = '/YlKiNJ5IgY92CrlqOWdLao1IjU4/6fYfg4nI5gNMe1u8s+MOJGBLjEGdOAcoiJHD0FthZPSAy9sYaCgzvSNCGRo59ZlPAxE2Kt2voVLLbhDHqS6DwD90ZmEa13m3C4CYIyKFvKDYWfA/nF0dpeEQQdB04t89/1O/w1cDnyilFU=';
-
+$x=[];
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
@@ -8,7 +8,7 @@ $events = json_decode($content, true);
 // Validate parsed JSON data
 
 if (!is_null($events['events'])) {
-	echo "whatttttttttttttttt";
+	$x=$events;
 	// Loop through each event
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
@@ -48,7 +48,7 @@ if (!is_null($events['events'])) {
 }
 else
 {
-echo "xxxxxxxxxx";	
+echo $x;	
 }
 
 
