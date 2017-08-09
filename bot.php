@@ -46,5 +46,10 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
+else
+{
+echo "xxxxxxxxxx"	
+}
+
 echo "OK5";
 echo $x;
