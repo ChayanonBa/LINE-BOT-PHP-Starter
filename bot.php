@@ -51,5 +51,4 @@ else
 echo "xxxxxxxxxx";	
 }
 
-echo "OK5";
-echo $x;
+
