@@ -1,2 +1,3 @@
-<?php
-echo "Hello LINE BOTeieieieieeieieiei";
+<?php $result = exec("python hello.py");
+print_r($result);
+ ?>
